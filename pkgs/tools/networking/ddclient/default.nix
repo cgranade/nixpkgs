@@ -12,8 +12,8 @@ perlPackages.buildPerlPackage rec {
   src = fetchFromGitHub {
     owner = "ddclient";
     repo = "ddclient";
-    rev = "1c0ba9a1260111f2eb75e76718d218ae2ee0b29f";
-    sha256 = lib.fakeSha256;
+    rev = "12e9a7c47bdbcb4322fd2ee9d3389a38e13b4d31";
+    sha256 = "sha256-aFvjFajUdBh1NfGFyBvGHfKPD1h6uGE7awRYlsQPNIc=";
   };
 
   postPatch = ''
