@@ -5,15 +5,15 @@ let
 in
 perlPackages.buildPerlPackage rec {
   pname = "ddclient";
-  version = "3.11.2";
+  version = "3.11.3";
 
   outputs = [ "out" ];
 
   src = fetchFromGitHub {
     owner = "ddclient";
     repo = "ddclient";
-    rev = "v${version}";
-    sha256 = "sha256-d1G+AM28nBpMWh1QBjm78KKeOL5b5arxERYRCXohwBg=";
+    rev = "1c0ba9a1260111f2eb75e76718d218ae2ee0b29f";
+    sha256 = lib.fakeSha256;
   };
 
   postPatch = ''
